@@ -38,12 +38,38 @@
                     <p>
                         TESTO QUI
                     </p>
-                    <div class="tab-title">
-                        <p class="tab-links">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designer Web/App</li>
+                            <li><span>Web development</span><br>Designer Web/App</li>
+                            <li><span>App Development</span><br>Designer Web/App</li>
+
+                        </ul>
                     </div>
                 </div>
+                <div class="tab-contents"id="Experience">
+                    <ul>
+                        <li><span>2021-Current</span><br>-----</li>
+                        <li><span>2019-2021</span><br>---------</li>
+                        <li><span>2015-2019</span><br>-----------</li>
+                        <li><span>2010-2015</span><br>-----------</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-contents"id="Education">
+                <ul>
+                    <li><span>2022</span><br>-----------</li>
+                    <li><span>2020</span><br>-----------</li>
+                    <li><span>2016</span><br>-------------</li>
+                </ul>
+            </div>
+        </div>
             </div>
         </div>
     </div>
