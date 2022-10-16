@@ -40,8 +40,8 @@
                     </p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
@@ -51,27 +51,108 @@
 
                         </ul>
                     </div>
-                </div>
-                <div class="tab-contents"id="Experience">
-                    <ul>
-                        <li><span>2021-Current</span><br>-----</li>
-                        <li><span>2019-2021</span><br>---------</li>
-                        <li><span>2015-2019</span><br>-----------</li>
-                        <li><span>2010-2015</span><br>-----------</li>
-
-                    </ul>
-                </div>
-            </div>
-            <div class="tab-contents"id="Education">
-                <ul>
-                    <li><span>2022</span><br>-----------</li>
-                    <li><span>2020</span><br>-----------</li>
-                    <li><span>2016</span><br>-------------</li>
-                </ul>
-            </div>
-        </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-Current</span><br>hjbhjbjh</li>
+                            <li><span>2019-2021</span><br>---------</li>
+                            <li><span>2015-2019</span><br>-----------</li>
+                            <li><span>2010-2015</span><br>-----------</li>
+    
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>-----------</li>
+                            <li><span>2020</span><br>-----------</li>
+                            <li><span>2016</span><br>-------------</li>
+                        </ul>
+                    </div>
+                </div> 
             </div>
         </div>
     </div>
+    <!-- -----------------services---------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>We Design</h2>
+                    <p>asdsajdbsajkdbnksajd</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h2>We Design 2</h2>
+                    <p>asdsajdbsajkdbnksajd</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h2>We Design 3</h2>
+                    <p>asdsajdbsajkdbnksajd</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------portfolio---------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1>My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="" alt="">
+                <div class="layer">
+                    <h3>App...</h3>
+                    <p>sadsad</p>
+                    <a href=""></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="" alt="">
+                <div class="layer">
+                    <h3>App...</h3>
+                    <p>sadsad</p>
+                    <a href=""></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="" alt="">
+                <div class="layer">
+                    <h3>App...</h3>
+                    <p>sadsad</p>
+                    <a href=""></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="" alt="">
+                <div class="layer">
+                    <h3>App...</h3>
+                    <p>sadsad</p>
+                    <a href=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
 </body> 
 </html>
