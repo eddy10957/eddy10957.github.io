@@ -1,42 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edoardo Troianiello's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/27f6e41b5e.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="container">
-        <nav>
-            <img src="" alt="" class="">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Articles</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-text">
-            <p>iOS Developer</p>
-            <h1>Hi, I'm <span>Edoardo</span> <br> Troianiello from Italy</h1>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" alt="" class="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#articles">Articles</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>iOS Developer</p>
+                <h1>Hi, I'm <span>Edoardo</span> <br> Troianiello from Italy</h1>
+            </div>
         </div>
     </div>
 
     <!-- ------------------------------about------------------------- -->
 
-    <div class="about">
+    <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="" alt="">
+                    <img src="./assets/eddo.jpeg" alt="">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <p>
-                        TESTO QUI
+                        Hello, I’m Edoardo Troianiello, I’m a 26 y.o student of Computer Engineering at Federico II
+                        Naples.
+
+                        I’ve been into programming since I can remember and after graduating from computer scientific
+                        high-school, I soon started my path at university on computer engineering.
+
+                        During these years I developed in multiple languages such as: C, C++, Java, Swift, SQL and Python.
+
+                        In the 2021 I joined the Apple Developer Academy where I focused myself on learning Swift and SwiftUI, at the end of the year I
+                        worked with a vast variety of IOS frameworks like: CoreData, Vapor, CoreML, AVFoundation,
+                        SceneKit and SpriteKit, but I also used external packages like: AudioKit,
+                        SwiftUI-Charts, and so on.
                     </p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -45,108 +63,164 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI/UX</span><br>Designer Web/App</li>
-                            <li><span>Web development</span><br>Designer Web/App</li>
-                            <li><span>App Development</span><br>Designer Web/App</li>
+                            <li><span>Languages</span><br>Swift - C - C++ - Java - Python - SQL - HTML - JS  </li>
+                            <li><span>Framework & Technologies</span><br>SwiftUI - SceneKit - SpriteKit - CoreML & CreateML - Vapor - OracleDb - XCode</li>
 
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2021-Current</span><br>hjbhjbjh</li>
-                            <li><span>2019-2021</span><br>---------</li>
-                            <li><span>2015-2019</span><br>-----------</li>
-                            <li><span>2010-2015</span><br>-----------</li>
-    
+                            <li><span>June 2022 - Present</span><br>Apple Developer Academy
+                                Pier Student @Apple Developer Academy of Naples
+                                · Second year working on "mark" project.</li>
+                            <li><span>Sept 2021 - June 2022</span><br>Apple Developer Academy
+                                Student @Apple Developer Academy of Naples
+                                · iOS Mobile Development.</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2022</span><br>-----------</li>
-                            <li><span>2020</span><br>-----------</li>
-                            <li><span>2016</span><br>-------------</li>
+                            <li><span>Present</span><br>Computer Engineering @University of Naples Federico II
+                                </li>
+                            <li><span>Sept 2010 - Sept 2015</span><br>High School Diploma in scientific studies @Liceo Scientifico G.Salvemini Sorrento</li>
                         </ul>
                     </div>
-                </div> 
+                    <a href="./assets/Cv.pdf" download class="btn">Download CV</a>
+                </div>
             </div>
         </div>
     </div>
-    <!-- -----------------services---------------- -->
+   
 
-    <div id="services">
+    <!-- -----------------portfolio---------------- -->
+    <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
+            <h1>Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./assets/projects/sushiRollIcon.png" alt="game gif">
+                    <div class="layer">
+                        <h3>SushiRoll: The Game</h3>
+                        <p>Sushi Roll is an endless 3D game created with SceneKit and SpriteKit framework</p>
+                        <a href="https://apps.apple.com/us/app/sushiroll-the-game/id1610765239"><i class="fa-brands fa-app-store"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/projects/particlesIcon.png" alt="">
+                    <div class="layer">
+                        <h3>Particles: Binaural Experience</h3>
+                        <p> Particles recognizes your feeling and creates a personalized experience using animation and binaural sounds to let you feel comfortable in any mood, in any environment.</p>
+                        <a href="https://apps.apple.com/it/app/particles-binaural-experience/id1629443126"><i class="fa-brands fa-app-store"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/projects/bot.png" alt="">
+                    <div class="layer">
+                        <h3>Artifact2 Bot</h3>
+                        <p>Artifact2 Bot it’s a telegram bot completely written in Swift using Vapor and telegram-vapor-bot frameworks deployed via Heroku.</p>
+                        <a href="https://t.me/artifact2_bot"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/projects/goalhit.png" alt="">
+                    <div class="layer">
+                        <h3>GoalHit</h3>
+                        <p>GoalHit it's an iOS app that helps the user to follow and achieve his goals.</p>
+                        <a href="https://github.com/eddy10957/GoalHit"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/projects/corsarineri.png" alt="">
+                    <div class="layer">
+                        <h3>CorsariNeri's Site</h3>
+                        <a href="http://www.corsarineri.it/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/projects/geoquizz.png" alt="">
+                    <div class="layer">
+                        <h3>GeoQuizz</h3>
+                        <p>GeoQuizz Is a small project for WWDC2022, written using just SwiftUI and Foundation as frameworks</p>
+                        <a href="https://github.com/eddy10957/GeoQuizz"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/projects/aslmodel.png" alt="">
+                    <div class="layer">
+                        <h3>ASL ML Model</h3>
+                        <p>Machine Learning model that recognizes the ASL alphabet.</p>
+                        <a href=""><i class="fa-brands fa-medium"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/projects/corsarineri.png" alt="">
+                    <div class="layer">
+                        <h3>CorsariNeri's Database</h3>
+                        <p>Database for CorsariNeri in order to better manage the warehouse.</p>
+                        <a href="https://github.com/eddy10957/Database-Project"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/eddy10957" class="btn">See more</a>
+        </div>
+    </div>
+
+     <!-- -----------------articles---------------- -->
+
+     <div id="articles">
+        <div class="container">
+            <h1 class="sub-title">Articles</h1>
+            <div class="articles-list">
                 <div>
-                    <h2>We Design</h2>
-                    <p>asdsajdbsajkdbnksajd</p>
-                    <a href="#">learn more</a>
+                    <i class="fa-brands fa-medium"></i>
+                    <h2>CoreML & CreateML</h2>
+                    <p>Create a Hand Pose ML model using Create ML</p>
+                    <a href="https://medium.com/@eddotroianiello/create-a-hand-pose-ml-model-using-create-ml-cadea3636c2b" class="btn btn3">Learn more</a>
                 </div>
                 <div>
-                    <h2>We Design 2</h2>
-                    <p>asdsajdbsajkdbnksajd</p>
-                    <a href="#">learn more</a>
+                    <i class="fa-brands fa-medium"></i>
+                    <h2>SceneKit</h2>
+                    <p>How to display a Scene in SceneKit</p>
+                    <a href="https://medium.com/@eddotroianiello/how-to-display-a-scene-in-scenekit-35a184b37624" class="btn btn3">Learn more</a>
                 </div>
-                <div>
+                <!-- <div>
                     <h2>We Design 3</h2>
                     <p>asdsajdbsajkdbnksajd</p>
                     <a href="#">learn more</a>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
 
-    <!-- -----------------portfolio---------------- -->
-<div id="portfolio">
-    <div class="container">
-        <h1>My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="" alt="">
-                <div class="layer">
-                    <h3>App...</h3>
-                    <p>sadsad</p>
-                    <a href=""></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="" alt="">
-                <div class="layer">
-                    <h3>App...</h3>
-                    <p>sadsad</p>
-                    <a href=""></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="" alt="">
-                <div class="layer">
-                    <h3>App...</h3>
-                    <p>sadsad</p>
-                    <a href=""></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="" alt="">
-                <div class="layer">
-                    <h3>App...</h3>
-                    <p>sadsad</p>
-                    <a href=""></a>
+    <!-- -----------------contact---------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i><a href="mailto:eddytd96@gmail.com">eddytd96@gmail.com</a></p>
+                    <p><i class="fa-solid fa-mobile-screen-button"></i>+39 334 8387 384</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/edoardotroianiello/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/eddy10957"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://medium.com/@eddotroianiello"><i class="fa-brands fa-medium"></i></a>
+                        <a href="https://www.instagram.com/eddo_96_/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
 
 
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname){
-            for (tablink of tablinks){
+        function opentab(tabname) {
+            for (tablink of tablinks) {
                 tablink.classList.remove("active-link");
             }
-            for (tabcontent of tabcontents){
+            for (tabcontent of tabcontents) {
                 tabcontent.classList.remove("active-tab");
             }
             event.currentTarget.classList.add("active-link");
@@ -154,5 +228,17 @@
 
         }
     </script>
-</body> 
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px"
+        }
+
+    </script>
+</body>
+
 </html>
