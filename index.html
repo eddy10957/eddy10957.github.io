@@ -35,87 +35,127 @@
                 </ul>
                 <i class="fa fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
-            <div class="header-text">
-                <p>iOS Developer</p>
-                <h1>Hi, I'm <span>Edoardo</span> <br> Troianiello from Italy</h1>
-            </div>
         </div>
+        <div class="hero1">
+            <div class="content">
+              <p class="first-text">Hey there, I'm-</p>
+              <p class="second-text">Edoardo Troianiello</p>
+              <p class="third-text">iOS Engineer - Software Engineer</p>
+              <div class="hero1-icons">
+                <a href="https://www.linkedin.com/in/edoardotroianiello/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/eddy10957"><i class="fa-brands fa-github"></i></a>
+                <a href="https://medium.com/@eddotroianiello"><i class="fa-brands fa-medium"></i></a>
+            </div>
+            </div>
+            <!--
+            <a class="link" href="#about">
+                <span class="link__arrow">
+                  <span></span>
+                  <span></span>
+                </span>
+                <span class="link__line"></span>
+                <span class="link__text">About</span>
+            </a>
+            -->
+        </div>
+          
+          
     </div>
 
     <!-- ------------------------------about------------------------- -->
 
     <div id="about">
         <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="./assets/eddo.jpeg" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>
-                        Hello, I’m Edoardo Troianiello, I’m a 26 y.o student of Computer Engineering at Federico II
-                        Naples.
+                <div id="aboutPadding">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="./assets/eddo.jpeg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>
+                            Hello, I'm Edoardo Troianiello, an iOS developer based in Piano di Sorrento, Naples, with over two years of experience in the iOS domain and a Bachelor's degree in Computer Engineering.<br>
 
-                        I’ve been into programming since I can remember and after graduating from computer scientific
-                        high-school, I soon started my path at university on computer engineering.
+                            My passion for programming has led me to explore a wide range of languages, including C, C++, Java, Swift, SQL, and Python.<br><br>
+                            However, my primary focus and expertise now lie in Swift, especially SwiftUI. I've honed my skills by working with various iOS frameworks, 
+                            such as CoreData, Vapor, CoreML, AVFoundation, SceneKit, and SpriteKit. Additionally, 
+                            I've incorporated external packages like AudioKit and SwiftUI-Charts into my projects.<br><br>
+                            One of the most significant milestones in my career was during my second year at the Apple Developer Academy, where I was selected among the top 60 students. 
 
-                        During these years I developed in multiple languages such as: C, C++, Java, Swift, SQL and Python.
+                            During the second year at the Apple Developer Academy, I had the opportunity to immerse myself in a real work environment. 
+                            This invaluable experience allowed me to work on practical projects, collaborate in agile teams, and interface with stakeholders. 
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('awards')">Awards & Certificates</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Languages</span><br>Swift - C - C++ - Java - Python - SQL - HTML - JS  </li>
+                                <li><span>Framework & Technologies</span><br>SwiftUI - SceneKit - SpriteKit - CoreML & CreateML - Vapor - OpenCV - OracleDb - XCode</li>
 
-                        In the 2021 I joined the Apple Developer Academy where I focused myself on learning Swift and SwiftUI, at the end of the year I
-                        worked with a vast variety of IOS frameworks like: CoreData, Vapor, CoreML, AVFoundation,
-                        SceneKit and SpriteKit, but I also used external packages like: AudioKit,
-                        SwiftUI-Charts, and so on.
-                    </p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                        <p class="tab-links" onclick="opentab('awards')">Awards & Certificates</p>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>June 2022 - June 2023</span><br>Apple Developer Academy
+                                    Pier Student @Apple Developer Academy of Naples
+                                    · Second year working on "mark" project.</li>
+                                <li><span>Sept 2021 - June 2022</span><br>Apple Developer Academy
+                                    Student @Apple Developer Academy of Naples
+                                    · iOS Mobile Development.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Dec 2023</span><br>Computer Engineering @University G. Marconi of Rome
+                                    </li>
+                                <li><span>Sept 2015</span><br>High School Diploma in scientific studies @Liceo Scientifico G.Salvemini Sorrento</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="awards">
+                            <ul>
+                                <li><span>June 2022</span><br>CCNA1: Introduction to Networks
+                                    </li>
+                                <li><span>June 2022</span><br>
+                                    Winner of The Big Hack - sixth edition: Challenge of Defence Tech, Thales Alenia Space, Telespazio: The Space Attack!</li>
+                            </ul>
+                        </div>
+                        <a href="./assets/Cv.pdf" download class="btn">Download CV</a>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Languages</span><br>Swift - C - C++ - Java - Python - SQL - HTML - JS  </li>
-                            <li><span>Framework & Technologies</span><br>SwiftUI - SceneKit - SpriteKit - CoreML & CreateML - Vapor - OpenCV - OracleDb - XCode</li>
-
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>June 2022 - Present</span><br>Apple Developer Academy
-                                Pier Student @Apple Developer Academy of Naples
-                                · Second year working on "mark" project.</li>
-                            <li><span>Sept 2021 - June 2022</span><br>Apple Developer Academy
-                                Student @Apple Developer Academy of Naples
-                                · iOS Mobile Development.</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>Present</span><br>Computer Engineering @University of Naples Federico II
-                                </li>
-                            <li><span>Sept 2010 - Sept 2015</span><br>High School Diploma in scientific studies @Liceo Scientifico G.Salvemini Sorrento</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="awards">
-                        <ul>
-                            <li><span>June 2022</span><br>CCNA: Introduction to Networks
-                                </li>
-                            <li><span>June 2022</span><br>
-                                Winner of The Big Hack - sixth edition: Challenge of Defence Tech, Thales Alenia Space, Telespazio: The Space Attack!</li>
-                        </ul>
-                    </div>
-                    <a href="./assets/Cv.pdf" download class="btn">Download CV</a>
                 </div>
             </div>
         </div>
+        <!--
+        <a class="link" href="#portfolio">
+            <span class="link__arrow">
+              <span></span>
+              <span></span>
+            </span>
+            <span class="link__line"></span>
+            <span class="link__text">Projects</span>
+        </a>
+        -->
     </div>
-   
 
-    <!-- -----------------portfolio---------------- -->
-    <div id="portfolio">
+    <!-- -----------------iOS Apps---------------- -->
+    <div id="ios-apps">
         <div class="container">
-            <h1>Projects</h1>
+            <h1>iOS Apps</h1>
             <div class="work-list">
+                <div class="work">
+                    <img src="./assets/projects/MotorLog.png" alt="motorlog icon">
+                    <div class="layer">
+                        <h3>MotorLog</h3>
+                        <p>
+                            MotorLog is the premier vehicle maintenance management application.
+                            Simplify your vehicle care.
+                        </p>
+                        <a href="https://apps.apple.com/us/app/motorlog/id1666500026"><i class="fa-brands fa-app-store"></i></a>
+                    </div>
+                </div>
                 <div class="work">
                     <img src="./assets/projects/AquaIcon.png" alt="aqua icon">
                     <div class="layer">
@@ -148,6 +188,18 @@
                         <a href="https://apps.apple.com/it/app/particles-binaural-experience/id1629443126"><i class="fa-brands fa-app-store"></i></a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <!-- -----------------portfolio---------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1>Projects</h1>
+            <div class="work-list">
+
                 <div class="work">
                     <img src="./assets/projects/bot.png" alt="">
                     <div class="layer">
@@ -162,6 +214,14 @@
                         <h3>Image Segmentation</h3>
                         <p>Python & OpenCv Image Segmentation for Nuclei Count.</p>
                         <a href="https://github.com/eddy10957/ImageSegmentationForNucleiCount"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/projects/Pandora.png" alt="">
+                    <div class="layer">
+                        <h3>Pandora's Box</h3>
+                        <p>Pandora's Box Is a small project for WWDC2023, written using just SwiftUI and Foundation as frameworks</p>
+                        <a href="https://github.com/eddy10957/GeoQuizz"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -235,6 +295,35 @@
                     <p>Core Data: Managing Data Models with Relationships in iOS Applications</p>
                     </a>
                 </div>
+
+                <div>
+                    <a href="https://medium.com/@eddotroianiello/testing-in-swift-for-dummies-part-1-laying-the-foundations-bf5cdf20daf6">
+                    <i class="fa-brands fa-medium"></i>
+                    <h2>Testing</h2>
+                    <p>Testing in Swift for Dummies: Part 1 — Laying the Foundations</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://medium.com/@eddotroianiello/testing-in-swift-for-dummies-part-2-running-debugging-and-advanced-concepts-4dec8616e3a6">
+                    <i class="fa-brands fa-medium"></i>
+                    <h2>Testing</h2>
+                    <p>Testing in Swift for Dummies : Part 2 — Running, Debugging, and Advanced Concepts</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://medium.com/@eddotroianiello/combine-for-dummies-part-1-73b889712b0a">
+                    <i class="fa-brands fa-medium"></i>
+                    <h2>Combine</h2>
+                    <p>Combine for Dummies: Part 1 — Making Asynchronous Swift Easy</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://medium.com/@eddotroianiello/combine-for-dummies-part-2-465a2216f4fd">
+                    <i class="fa-brands fa-medium"></i>
+                    <h2>Combine</h2>
+                    <p>Combine for Dummies: Part 2 — Advanced Techniques and Beyond</p>
+                    </a>
+                </div>
                 
             </div>
         </div>
@@ -247,7 +336,7 @@
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
                     <p><i class="fa-regular fa-paper-plane"></i><a href="mailto:eddytd96@gmail.com">eddytd96@gmail.com</a></p>
-                    <p><i class="fa-solid fa-mobile-screen-button"></i>+39 334 8387 384</p>
+                    <p><i class="fa-solid fa-mobile-screen-button"></i>+393348387384</p>
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/edoardotroianiello/"><i class="fa-brands fa-linkedin-in"></i></a>
                         <a href="https://github.com/eddy10957"><i class="fa-brands fa-github"></i></a>
@@ -287,6 +376,8 @@
         }
 
     </script>
+    <script src="dynamic_text_resize.js"></script>
+
 </body>
 
 </html>
